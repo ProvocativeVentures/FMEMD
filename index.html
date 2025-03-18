@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menstrual Fund</title>
+  <!-- Google Font: IBM Plex Sans with light weights -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'IBM Plex Sans', sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.5;
+    }
+    /* Header */
+    header {
+      background-color: lightcoral;
+      padding: 15px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    header .logo {
+      font-size: 1.8em;
+      font-weight: 200;
+      color: #fff;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 0.95em;
+    }
+    /* Hero Section */
+    .hero {
+      padding: 5px 15px;
+      text-align: center;
+      background: #ffe4e1;
+    }
+    .hero h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      font-weight: 200;
+    }
+    .hero p {
+      font-size: 1em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    /* Content Sections */
+    .section {
+      padding: 30px 15px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: lightcoral;
+      font-weight: 200;
+    }
+    .cycle-phase {
+      border-left: 3px solid lightcoral;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      background: #fafafa;
+    }
+    .cycle-phase h3 {
+      margin: 5px 0;
+      font-size: 1.2em;
+      font-weight: 200;
+    }
+    /* Reports Section */
+    .reports a {
+      color: lightcoral;
+      text-decoration: none;
+      font-size: 0.95em;
+    }
+    .reports a:hover {
+      text-decoration: underline;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.85em;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Menstrual Fund ♀</div>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#strategy">Strategy</a>
+      <a href="#cycle">Cycle Impact</a>
+      <a href="#reports">Reports</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <h1><b>FMEMD:</b> Forcast Markets With Executive Menstrual Data</h1>
+    <p>An actively managed ETF from _____ that leverages public insights to model the menstrual cycle of female executives, informing agile trading strategies.</p>
+  </section>
+  
+  <section class="section" id="overview">
+    <h2>Overview</h2>
+    <p>We integrate advanced analytics and public data to develop a predictive model based on the menstrual cycles of female executives. Our unique approach provides insights into market trends influenced by natural physiological rhythms.</p>
+  </section>
+  
+  <section class="section" id="strategy">
+    <h2>Strategy</h2>
+    <p>Our system continuously adjusts its trading strategy—including buying, selling, and short-selling—based on predictive cycle insights. This dynamic model allows us to respond rapidly to market fluctuations.</p>
+  </section>
+  
+  <section class="section" id="cycle">
+    <h2>Cycle Phases & Performance</h2>
+    <div class="cycle-phase">
+      <h3>Menstrual Phase</h3>
+      <p>Characterized by lower energy and introspection, this phase may lead to conservative decisions with a focus on maintaining stability in trading.</p>
+    </div>
+    <div class="cycle-phase">
+      <h3>Follicular Phase</h3>
+      <p>Rising estrogen drives creativity and optimism, unlocking opportunities for proactive investments and market expansion.</p>
+    </div>
+    <div class="cycle-phase">
+      <h3>Ovulatory Phase</h3>
+      <p>At peak estrogen, enhanced cognitive function and assertiveness drive high-impact trades that capture market momentum.</p>
+    </div>
+    <div class="cycle-phase">
+      <h3>Luteal Phase</h3>
+      <p>A shift toward risk aversion and consolidation prompts a defensive approach, focusing on securing existing positions.</p>
+    </div>
+  </section>
+  
+  <section class="section reports" id="reports">
+    <h2>Reports</h2>
+    <p>Access our latest market insights and performance reports:</p>
+    <ul>
+      <li><a href="#">Q1 2025 Performance Report</a></li>
+      <li><a href="#">Market Trends Analysis</a></li>
+      <li><a href="#">Investor Insights</a></li>
+    </ul>
+  </section>
+  
+  <footer id="contact">
+    <p>&copy; 2025 Menstrual Fund. All rights reserved.</p>
+    <p>
+      <a href="#">Privacy</a> | <a href="#">Terms of Service</a>
+    </p>
+  </footer>
+  
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
