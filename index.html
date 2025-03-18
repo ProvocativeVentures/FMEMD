@@ -42,7 +42,7 @@
     }
     /* Hero Section */
     .hero {
-      padding: 5px 15px;
+      padding: 15px 15px;
       text-align: center;
       background: #ffe4e1;
     }
@@ -55,6 +55,21 @@
       font-size: 1em;
       max-width: 700px;
       margin: 0 auto;
+    }
+    /* Invest Button */
+    .invest-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background-color: lightcoral;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 400;
+      border: none;
+      border-radius: 0;
+    }
+    .invest-button:hover {
+      opacity: 0.9;
     }
     /* Content Sections */
     .section {
@@ -111,9 +126,7 @@
         text-align: center;
       }
       nav {
-        margin-top: 10px;
-        flex-wrap: wrap;
-        gap: 10px;
+        display: none;
       }
     }
   </style>
@@ -133,6 +146,7 @@
   <section class="hero">
     <h1><b>FMEMD:</b> Forcast Markets With Executive Menstrual Data</h1>
     <p>An actively managed ETF from Provocative Ventures that leverages public insights to model the menstrual cycle of female executives, informing agile trading strategies.</p>
+    <a href="#invest" class="invest-button">Invest</a>
   </section>
   
   <section class="section" id="overview">
